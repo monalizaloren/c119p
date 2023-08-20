@@ -69,7 +69,8 @@ drawnSketch = "";
 answerHolder = "";
 score = 0;
 
-function updateCanvas() {
+//Crie a função "updateCanvas"
+??? {
   background("white");
   randomNumber = Math.floor((Math.random() * quickDrawDataset.length) + 1);
   console.log(quickDrawDataset[randomNumber]);
@@ -77,11 +78,13 @@ function updateCanvas() {
   document.getElementById('sketchName').innerHTML = 'Esboço a ser desenhado: ' + sketch;
 }
 
-function preload() {
+ //Crie a função "preload"
+???{
   classifier = ml5.imageClassifier('DoodleNet');
 }
 
-function setup() {
+ //Crie a função "setup"
+???{
   canvas = createCanvas(280, 280);
   canvas.center();
   background("white");
